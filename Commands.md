@@ -41,5 +41,11 @@ ansible web -m win_feature -a "name=Telnet-Client state=present"
 ####Execute modules from playbook####
 
 ##Playbooks##
+####Create playbook to install IIS feature ####
+
+####create iis.yml file using text editor####
+
+####execute playbook after updating the contents of iss.yml####
+ansible-playbook iis.yml
 
 ##Roles##
