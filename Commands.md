@@ -48,4 +48,10 @@ ansible web -m win_feature -a "name=Telnet-Client state=present"
 ####execute playbook after updating the contents of iss.yml####
 ansible-playbook iis.yml
 
+####Add when condition to iis.yml file to install IIS only for windows OS####
+ansible-playbook iis.yml
+
+####If when condition is changed to OS other than windows OS, the IIS isntallation task is skipped####
+ansible-playbook iis.yml
+
 ##Roles##
